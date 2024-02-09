@@ -11,8 +11,9 @@ To clone this project to your local machine, follow these steps:
 3. Run the following command:
 
    ```bash
-   git clone <repository-url>
-cd <project-directory>
+   git clone https://github.com/HappyLife2/Responsive-Calculator.git
+   cd Responsive-Calculator
+   code .
 
 ## Features
 
