@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button onclick="clearDisplay()">AC</button>
+            <button onclick="setInput('7')">7</button>
+            <button onclick="setInput('8')">8</button>
+            <button onclick="setInput('9')">9</button>
+            <button onclick="setOperator('+')">+</button>
+            <button onclick="setInput('4')">4</button>
+            <button onclick="setInput('5')">5</button>
+            <button onclick="setInput('6')">6</button>
+            <button onclick="setOperator('-')">-</button>
+            <button onclick="setInput('1')">1</button>
+            <button onclick="setInput('2')">2</button>
+            <button onclick="setInput('3')">3</button>
+            <button onclick="setOperator('*')">*</button>
+            <button onclick="setInput('0')">0</button>
+            <button onclick="setInput('.')">.</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="setOperator('/')">/</button>
+            <button id="degBtn" class="mode-button" onclick="switchDisplayMode(this)">Deg</button>
+            <button id="radBtn" class="mode-button" onclick="switchDisplayMode(this)">Rad</button>
+            <button onclick="showHistory()">History</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
