@@ -1,0 +1,71 @@
+/* Apply box-sizing to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Body styles with gradient background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* Gradient Background */
+    background: #FFA07A; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFA07A, #87CEEB); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFA07A, #87CEEB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Calculator container styles */
+.calculator {
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+    border-radius: 15px; /* Increase border radius for rounded corners */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+/* Display input field styles */
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+    border: none; /* Remove border */
+    border-radius: 10px; /* Adjust border radius */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Apply blur effect to input */
+}
+
+/* Button container grid styles */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+/* Button styles */
+button {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px; /* Adjust border radius */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+    color: black; /* Default text color */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: rgba(173, 216, 230, 0.7); /* Light blue background on hover */
+}
+
+/* Selected mode button styles */
+.selected {
+    background-color: rgba(255, 0, 0, 0.7); /* Red background for selected mode */
+    color: white; /* White text color for better visibility */
+}
